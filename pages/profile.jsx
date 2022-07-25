@@ -48,7 +48,7 @@ export default Profile;
 const getToken = async (body) => {
   const data = await axios.post('https://www.reddit.com/api/v1/access_token', querystring.stringify(body), {
     headers: {
-      Authorization: `Basic ${Buffer.from(`${process.env.NEXT_PUBLIC_CLIENT_ID}:${process.env.CLIENT_SECRET}`).toString('base64')}`,
+      Authorization: `Basic ${Buffer.from(`${variables.CLIENT_ID}:${variables.CLIENT_SECRET}`).toString('base64')}`,
       "content-type": "application/x-www-form-urlencoded"
     },
 
