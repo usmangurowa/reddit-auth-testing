@@ -15,3 +15,25 @@
   font-weight: 800;
   padding: 20px;
 }
+
+.navbar {
+  display: flex;
+  width: 100vh;
+  list-style-type: none;
+}
+
+.navbar li a {
+  padding: 10px;
+  font-size: larger;
+  width: 150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
